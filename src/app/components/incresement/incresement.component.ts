@@ -9,6 +9,9 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 export class IncresementComponent implements OnInit {
 
   @Input('value') progress: number = 0;
+  @Input() btnClass: string = 'btn btn-primary';
+
+
   @Output('value') outValue: EventEmitter<number> = new EventEmitter();
 
   constructor() { }
@@ -27,6 +30,18 @@ export class IncresementComponent implements OnInit {
     }
     this.outValue.emit(this.progress);
     this.progress = this.progress + value;
+  }
+
+  onChange(newValue: number) {
+    if (newValue >= 100) {
+      this.progress = 100;
+    } else if (newValue <= 0) {
+      this.progress = 0;
+    } else {
+      this.progress = newValue;
+    }
+    this.outValue.emit(this.progress);
+    console.log(this.progress)
   }
 
 }
