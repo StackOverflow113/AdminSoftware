@@ -20,6 +20,6 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     AuthModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
