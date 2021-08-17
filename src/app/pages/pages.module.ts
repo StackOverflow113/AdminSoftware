@@ -9,6 +9,8 @@ import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { ComponentsModule } from '../components/components.module';
 import { ChartsModule } from 'ng2-charts';
+import { AccoutSettingsComponent } from './acountSettings/accout-settings.component';
+
 
 @NgModule({
   declarations: [
@@ -16,12 +18,14 @@ import { ChartsModule } from 'ng2-charts';
     ProgressComponent,
     GraficaComponent,
     PagesComponent,
+    AccoutSettingsComponent,
   ],
   exports: [
     DashboardComponent,
     ProgressComponent,
     GraficaComponent,
     PagesComponent,
+    AccoutSettingsComponent
   ],
   imports: [
     CommonModule,
