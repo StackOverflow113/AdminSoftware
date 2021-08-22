@@ -10,6 +10,8 @@ import { AppRoutingModule } from '../app-routing.module';
 import { ComponentsModule } from '../components/components.module';
 import { ChartsModule } from 'ng2-charts';
 import { AccoutSettingsComponent } from './acountSettings/accout-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
@@ -19,6 +21,8 @@ import { AccoutSettingsComponent } from './acountSettings/accout-settings.compon
     GraficaComponent,
     PagesComponent,
     AccoutSettingsComponent,
+    PromesasComponent,
+    RxjsComponent,
   ],
   exports: [
     DashboardComponent,
